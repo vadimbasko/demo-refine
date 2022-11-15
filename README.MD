@@ -49,3 +49,21 @@ To learn more about **refine**, please check out the [Documentation](https://ref
 ## License
 
 MIT
+
+## Creation History
+
+### Step 1
+
+Package manager: › Npm
+✔ Select your project type › refine-react
+✔ What will be the name of your app · demo-refine
+✔ Do you want to use a UI Framework?: · antd
+✔ Do you want a customized theme?: · antd-css
+✔ Router Provider: · react-router-v6
+✔ Data Provider: · data-provider-graphql
+✔ Auth Provider: · auth-provider-custom
+✔ Do you want a customized layout? · no
+✔ Do you want to add Kbar command palette: · no
+✔ i18n - Internationalization: · i18n-antd
+✔ Would you like to share your choices with us anonymously? › No
+

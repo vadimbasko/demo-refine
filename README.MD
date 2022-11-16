@@ -68,5 +68,11 @@ MIT
 ✔ Would you like to share your choices with us anonymously? › No <br>
 
 ### Step 2 - Custom Login Page
-[Login page from tutorial](https://refine.dev/blog/simple-web-application-with-refine/#login-page)
 
+Login page from [tutorial](https://refine.dev/blog/simple-web-application-with-refine/#login-page).
+
+### Step 3 - Auth
+
+AuthProvider customized, react app proxy added.
+
+``` npm install axios qs http-proxy-middleware --save```<br>

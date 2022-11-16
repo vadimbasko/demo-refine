@@ -54,16 +54,19 @@ MIT
 
 ### Step 1
 
-Package manager: › Npm
-✔ Select your project type › refine-react
-✔ What will be the name of your app · demo-refine
-✔ Do you want to use a UI Framework?: · antd
-✔ Do you want a customized theme?: · antd-css
-✔ Router Provider: · react-router-v6
-✔ Data Provider: · data-provider-graphql
-✔ Auth Provider: · auth-provider-custom
-✔ Do you want a customized layout? · no
-✔ Do you want to add Kbar command palette: · no
-✔ i18n - Internationalization: · i18n-antd
-✔ Would you like to share your choices with us anonymously? › No
+✔ Package manager: › Npm <br>
+✔ Select your project type › refine-react <br>
+✔ What will be the name of your app · demo-refine <br>
+✔ Do you want to use a UI Framework?: · antd <br>
+✔ Do you want a customized theme?: · antd-css <br>
+✔ Router Provider: · react-router-v6 <br>
+✔ Data Provider: · data-provider-graphql <br>
+✔ Auth Provider: · auth-provider-custom <br>
+✔ Do you want a customized layout? · no <br>
+✔ Do you want to add Kbar command palette: · no <br>
+✔ i18n - Internationalization: · i18n-antd <br>
+✔ Would you like to share your choices with us anonymously? › No <br>
+
+### Step 2 - Custom Login Page
+[Login page from tutorial](https://refine.dev/blog/simple-web-application-with-refine/#login-page)
 

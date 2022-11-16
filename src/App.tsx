@@ -29,6 +29,10 @@ function App() {
     getLocale: () => i18n.language,
   };
 
+  function Users() {
+    return <></>;
+  }
+
   return (
     <Refine
       notificationProvider={notificationProvider}
@@ -41,6 +45,15 @@ function App() {
       LoginPage={AuthPage}
       i18nProvider={i18nProvider}
       Header={Header}
+      resources={[
+        {
+          name: "users",
+          list: Users,
+          options: {
+            route: "users",
+          },
+        },
+      ]}
     />
   );
 }

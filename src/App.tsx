@@ -15,7 +15,8 @@ import { useTranslation } from "react-i18next";
 import { Header } from "components/layout";
 import { authProvider } from "./authProvider";
 import {Login} from "./pages/Login";
-const API_URL = "https://your-graphql-url/graphql";
+import {Companies} from "./pages/Companies";
+const API_URL = "http://localhost:3000/graphql";
 
 const client = new GraphQLClient(API_URL);
 const gqlDataProvider = dataProvider(client);
@@ -28,10 +29,6 @@ function App() {
     changeLocale: (lang: string) => i18n.changeLanguage(lang),
     getLocale: () => i18n.language,
   };
-
-  function Users() {
-    return <></>;
-  }
 
   return (
     <Refine
@@ -47,10 +44,10 @@ function App() {
       Header={Header}
       resources={[
         {
-          name: "users",
-          list: Users,
+          name: "companies",
+          list: Companies,
           options: {
-            route: "users",
+            route: "companies",
           },
         },
       ]}

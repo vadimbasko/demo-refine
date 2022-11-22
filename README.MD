@@ -76,3 +76,22 @@ Login page from [tutorial](https://refine.dev/blog/simple-web-application-with-r
 AuthProvider customized, react app proxy added.
 
 ``` npm install axios qs http-proxy-middleware --save```<br>
+
+### Step 4 - Connection with API
+
+Show list of company names using `useCustom` Refine hook.
+
+```typescript
+  const metaData: MetaDataQuery = {
+    operation: "companyList",
+    fields: [
+      "name"
+    ],
+  };
+
+  const { data } = useCustom<Array<ICompany>>({
+    url: '',
+    method: 'get',
+    metaData
+  });
+```

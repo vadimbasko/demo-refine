@@ -95,3 +95,10 @@ Show list of company names using `useCustom` Refine hook.
     metaData
   });
 ```
+
+### Step 5 - useTable hook
+
+Load companies via Refine `useTable`. Backend changes required, expected query with params in schema:
+```
+companyListRefine(where: JSON, limit: Int, sort: String, start: Int): [Company]!
+```

@@ -15,7 +15,9 @@ import { useTranslation } from "react-i18next";
 import { Header } from "components/layout";
 import { authProvider } from "./authProvider";
 import {Login} from "./pages/Login";
-import {Companies} from "./pages/Companies";
+import {CompanyList} from "./pages/CompanyList";
+import {CompanyCreate} from "./pages/CompanyCreate";
+import {CompanyEdit} from "./pages/CompanyEdit";
 const API_URL = "http://localhost:3000/graphql";
 
 const client = new GraphQLClient(API_URL);
@@ -45,7 +47,9 @@ function App() {
       resources={[
         {
           name: "companies",
-          list: Companies,
+          list: CompanyList,
+          create: CompanyCreate,
+          edit: CompanyEdit,
           options: {
             route: "companies",
           },

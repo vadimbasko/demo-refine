@@ -18,6 +18,10 @@ import {Login} from "./pages/Login";
 import {CompanyList} from "./pages/CompanyList";
 import {CompanyCreate} from "./pages/CompanyCreate";
 import {CompanyEdit} from "./pages/CompanyEdit";
+import {UserList} from "./pages/UserList";
+import {UserCreate} from "./pages/UserCreate";
+import {UserEdit} from "./pages/UserEdit";
+import {UserShow} from "./pages/UserShow";
 const API_URL = "http://localhost:3000/graphql";
 
 const client = new GraphQLClient(API_URL);
@@ -52,6 +56,16 @@ function App() {
           edit: CompanyEdit,
           options: {
             route: "companies",
+          },
+        },
+        {
+          name: "users",
+          list: UserList,
+          create: UserCreate,
+          edit: UserEdit,
+          show: UserShow,
+          options: {
+            route: "users",
           },
         },
       ]}

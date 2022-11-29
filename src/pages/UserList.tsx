@@ -76,7 +76,7 @@ export const UserList: React.FC<IResourceComponentsProps> = () => {
           render={item => item?.company?.name}
         />
         <Table.Column
-          key="role.name"
+          key="role"
           title="Role Name"
           render={item => item?.role?.name}
         />

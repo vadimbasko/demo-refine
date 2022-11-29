@@ -4,13 +4,35 @@ import {
   Create,
   Form,
   Input,
-  useForm,
+  useForm, useSelect, Select
 } from "@pankod/refine-antd";
-import {IUser} from "../interfaces/interfaces";
+import {ICompany, IRole, IUser} from "../interfaces/interfaces";
 import {IResourceComponentsProps} from "@pankod/refine-core";
 
 export const UserCreate: React.FC<IResourceComponentsProps> = () => {
   const {formProps, saveButtonProps} = useForm<IUser>();
+
+  const companySelectRes= useSelect<ICompany>({
+    optionLabel: "name",
+    resource: "companies",
+    metaData: {
+      fields: [
+        "id",
+        "name"
+      ],
+    }
+  });
+
+  const roleSelectRes = useSelect<IRole>({
+    optionLabel: "name",
+    resource: "roles",
+    metaData: {
+      fields: [
+        "id",
+        "name"
+      ],
+    }
+  });
 
   return (
     <Create saveButtonProps={saveButtonProps}>
@@ -58,6 +80,20 @@ export const UserCreate: React.FC<IResourceComponentsProps> = () => {
           name="userSource"
         >
           <Input/>
+        </Form.Item>
+
+        <Form.Item
+          label="Company"
+          name="companyId"
+        >
+          <Select {... companySelectRes.selectProps} />
+        </Form.Item>
+
+        <Form.Item
+          label="Role"
+          name="roleId"
+        >
+          <Select {... roleSelectRes.selectProps} />
         </Form.Item>
       </Form>
     </Create>

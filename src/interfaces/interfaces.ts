@@ -1,3 +1,5 @@
+import {Dayjs} from "dayjs";
+
 export interface ICompany {
   id: string
   name: string
@@ -29,4 +31,10 @@ export interface IRole {
   name: string
   mobileAccess?: boolean
   webAccess?: boolean
+}
+
+export interface IPostFilterVariables {
+  company: string;
+  userSource: string;
+  registrationDate: [Dayjs, Dayjs];
 }
